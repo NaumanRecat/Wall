@@ -9,16 +9,11 @@ import {
   View,
 } from 'react-native';
 
+import Splash from './src/screens/Splash';
+
 const App = () => {
     return(
-      <View style={{
-        backgroundColor:'#ada',
-        flex:1,
-      }}>
-        <Text>
-          Nomi is just testing
-        </Text>
-      </View>
+      <Splash/>
     )
   };
 
