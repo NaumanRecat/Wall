@@ -1,5 +1,6 @@
 import React from "react";
 import {View, Text, Image, StyleSheet} from 'react-native';
+import {widthPercentageToDP as w, heightPercentageToDP as h} from 'react-native-responsive-screen';
 
 const Txt = () => {
     return(
@@ -24,16 +25,16 @@ const styles = StyleSheet.create({
         flex:1, backgroundColor: '#333333', justifyContent:'center'
     },
     fnparentview:{
-        height: 300, justifyContent:'center', alignItems:'center'
+        justifyContent:'center', alignItems:'center'
     },
     imagesty:{
-        height: 130, width: 90, backgroundColor:'#faf'
+        height: h('26%'), width: w('25%'), backgroundColor:'#faf'
     },
     Text1:{
-        fontSize:25, fontWeight:'bold', color:'#FFFFFF'
+        fontSize:h('4%'), fontWeight:'bold', color:'#FFFFFF'
     },
     Text2:{
-        fontSize:14, color:'#FFFFFF'
+        fontSize:h('2.5%'), color:'#FFFFFF'
     }
 });
 
